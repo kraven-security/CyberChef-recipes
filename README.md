@@ -8,16 +8,22 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 
 ## Tips for Getting Started
 
-...
+### Loading a Recipe
+ 
+ 1. Copy the recipe code under the "Code" section of recipe or from the associated `.json` file. The Code section conains the recipe in Chef format.
+ 2. Select the "Load recipe" button in CyberChef (folder icon).
+ 3. Paste in the code and press Load.
 
 
 ## Malware Analysis
 
 > Recipes for working extracting useful information from malware.
 
-- recipe1: ...
 
-#### recipe1
+### recipe1
 
-...
+- Convert data from Base64.
 
+#### Code
+
+`From_Base64('A-Za-z0-9+/=',true,false)`
