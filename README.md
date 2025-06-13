@@ -32,6 +32,15 @@ This repository contains a list of CyberChef recipes you may find useful when wo
  -->
 
 
+## Content
+
+### [Decoding](Decoding) 
+
+##### [Decoding JWT Tokens](Decoding JWT Tokens)
+
+
+
+
 
 ## Decoding
 
@@ -173,6 +182,8 @@ Find_/_Replace({'option':'Simple string','string':','},'\\n    ',true,false,true
 A CSV (Comma-Separated Values) file is a plain text file format used to store tabular data, with each value in a row separated by a comma. Each new line in the file indicates a new row of data. This simple, widely compatible format is commonly used for exchanging data between different applications, databases, and spreadsheets
 
 This CyberChef recipe takes a CSV file and converts it into a HTML table so it can be included in a web application/report. 
+
+#### Recipe
 
 ```
 Find_/_Replace({'option':'Extended (\\n, \\t, \\x...)','string':','},'</td><td>',true,false,true,false)
