@@ -32,14 +32,30 @@ This repository contains a list of CyberChef recipes you may find useful when wo
  -->
 
 
-## Content
+## Table of Contents
 
 ### [Decoding](#decoding) 
 
-#### - [Decoding JWT Tokens](#decoding-jwt-tokens)
+#### -> [Decoding JWT Tokens](#decoding-jwt-tokens)
+
+#### -> [Decoding SAML](#decoding-saml)
 
 
+### [Log Parsing](#log-parsing)
 
+#### -> [Fomat Apache HTTP Access Log](#format-apache-http-access-log)
+
+### Images
+
+#### -> [Extracting EXIF Data](#extract-exif-data)
+
+### Email
+
+#### -> [Validate Email Address Using UserCheck.com](#validate-email-address-using-usercheckcom)
+
+### Data Formatting
+
+#### -> [Convert CSV File to HTML Table](#convert-csv-file-to-html-table)
 
 
 ## Decoding
