@@ -27,3 +27,22 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 #### Code
 
 `From_Base64('A-Za-z0-9+/=',true,false)`
+
+
+
+## Decoding Tokens
+
+A JSON Web Token (JWT) is a compact, self-contained, and secure way to transmit information between parties as a JSON object. It's digitally signed to ensure the data hasn't been tampered with and is commonly used for stateless authentication, allowing servers to verify user identity without storing session information. Essentially, it's a trusted digital ID card that carries user data and permissions.
+
+This CyberChef recipe can be used to decode a JSON Web Token to reveal it's header and payload information. See [jwt.io](https://jwt.io/) for extended usage.
+
+#### Recipe
+
+```
+URL_Decode(true)
+Fork('.','\\n',false)
+From_Base64('A-Za-z0-9+/=',true,false)
+Filter('Line feed','^{.*}$',false)
+JSON_Beautify('    ',false,true)
+```
+
