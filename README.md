@@ -45,15 +45,15 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 
 #### -> [Fomat Apache HTTP Access Log](#format-apache-http-access-log)
 
-### Images
+### [Images](#images)
 
 #### -> [Extracting EXIF Data](#extract-exif-data)
 
-### Email
+### [Email](#email)
 
 #### -> [Validate Email Address Using UserCheck.com](#validate-email-address-using-usercheckcom)
 
-### Data Formatting
+### [Data Formatting](#data-formating)
 
 #### -> [Convert CSV File to HTML Table](#convert-csv-file-to-html-table)
 
