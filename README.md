@@ -34,9 +34,9 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 
 ## Content
 
-### [Decoding](Decoding) 
+### [Decoding](#decoding) 
 
-##### [Decoding JWT Tokens](Decoding JWT Tokens)
+##### [Decoding JWT Tokens](#decoding-jwt-tokens)
 
 
 
