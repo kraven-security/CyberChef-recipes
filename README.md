@@ -14,7 +14,8 @@ This repository contains a list of CyberChef recipes you may find useful when wo
  2. Select the "Load recipe" button in CyberChef (folder icon).
  3. Paste in the code and press Load.
 
-!!!
+
+<!--
 ## Malware Analysis
 
 > Recipes for working extracting useful information from malware.
@@ -28,7 +29,9 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 
 `From_Base64('A-Za-z0-9+/=',true,false)`
 
-!!!
+ -->
+
+ 
 
 ## Decoding Tokens
 
