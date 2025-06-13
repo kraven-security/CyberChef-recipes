@@ -15,26 +15,13 @@ This repository contains a list of CyberChef recipes you may find useful when wo
  3. Paste in the code and press Load.
 
 
-<!--
-## Malware Analysis
-
-> Recipes for working extracting useful information from malware.
-
-
-### recipe1
-
-- Convert data from Base64.
-
-#### Code
-
-`From_Base64('A-Za-z0-9+/=',true,false)`
-
- -->
-
-
 ## Table of Contents
 
-### [Decoding](#decoding) 
+### [Malware Analysis]
+
+### [Web Tokens](#web-tokens) 
+
+#### 
 
 #### -> [Decoding JWT Tokens](#decoding-jwt-tokens)
 
@@ -58,7 +45,64 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 #### -> [Convert CSV File to HTML Table](#convert-csv-file-to-html-table)
 
 
-## Decoding
+## Malware Analysis
+
+> Recipes for working extracting useful information from malware.
+
+
+### Decoding Base64 Encoded PowerShell
+
+[Decoding Base64 Encoded PowerShell](./images/decode-b64-powershell.png)
+
+Scripted malware will often use Base64 encoding to evade detection by automated tools. This CyberChef recipe extracts Base64 encoded data in a PowerShell command and decode it. Finally, it adds some formating to make it look better.
+
+#### Code
+
+```
+Regular_expression('User defined','[a-zA-Z0-9+/=]{30,}',true,true,false,false,false,false,'List matches')
+From_Base64('A-Za-z0-9+/=',true,false)
+Decode_text('UTF-16LE (1200)')
+Syntax_highlighter('auto detect')
+```
+
+### Extract Base64 and Inflate PowerShell Code
+
+[Extract Base64 and Inflate PowerShell Code](./images/extract-b64-inflate-beautify.png)
+
+PowerShell malware will often use Base64 encoding with compression (e.g. `IO.Compression.DeflateStream`) to evade detection by automated tools. This CyberChef recipe extracts Base64 encoded data in a PowerShell command, decodes it, and decompresses (inflates) the code. Finally, it adds some formating to make it look better.
+
+#### Recipe
+
+```
+Regular_expression('User defined','[a-zA-Z0-9+/=]{30,}',true,true,false,false,false,false,'List matches')
+From_Base64('A-Za-z0-9+/=',true,false)
+Raw_Inflate(0,0,'Adaptive',false,false)
+Generic_Code_Beautify()
+Syntax_highlighter('auto detect')
+```
+
+> Source: [mattnotmax](https://github.com/mattnotmax/cyberchef-recipes)
+
+### Decoding CharCode
+
+[Decodeing CharCode](./images/decoding-charcode.png)
+
+
+"Charcode" (short for character code) refers to the numerical representation of a character. While legitimate in programming, it can be used maliciously in techniques like obfuscation, where attackers convert malicious code into its character code equivalents. This makes the code harder for security tools and human analysts to detect and understand, allowing exploits to bypass defenses.
+
+This CyberChef recipe extracts charcode and converts it to it's character representation. It also includes a Jump operation you can use to bypass multiple layers of charcode obfuscation. Edit the "Maximum jumps" paraemter or disable to adjust/remove this functionality.
+
+#### Recipe
+
+```
+Label('start')
+Regular_expression('User defined','([0-9]{2,3}(,\\s|))+',true,true,false,false,false,false,'List matches')
+From_Charcode('Comma',10)
+Jump('start',1)
+```
+
+
+## Web Tokens
 
 > CyberChef recipes to decode popular encoding formats.
 
