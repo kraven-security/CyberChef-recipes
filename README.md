@@ -32,6 +32,10 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 
 ## Decoding Tokens
 
+### Decoding JWT Tokens
+
+![Decoding JWT Tokens](./images/decoding-jwt-tokens.png)
+
 A JSON Web Token (JWT) is a compact, self-contained, and secure way to transmit information between parties as a JSON object. It's digitally signed to ensure the data hasn't been tampered with and is commonly used for stateless authentication, allowing servers to verify user identity without storing session information. Essentially, it's a trusted digital ID card that carries user data and permissions.
 
 This CyberChef recipe can be used to decode a JSON Web Token to reveal it's header and payload information. See [jwt.io](https://jwt.io/) for extended usage.
