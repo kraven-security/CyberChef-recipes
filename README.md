@@ -19,7 +19,7 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 
 ### [Malware Analysis](#malware-analysis)
 
-#### => [Decoding Base64 Encoded PowerShell](#decoding-base64-encoded-powershell)
+#### -> [Decoding Base64 Encoded PowerShell](#decoding-base64-encoded-powershell)
 
 #### -> [Extract Base64 and Inflate PowerShell Code](#extract-base64-and-inflate-powershell-code)
 
