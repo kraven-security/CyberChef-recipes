@@ -8,6 +8,10 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 
 ## Tips for Getting Started
 
+### Read Up on CyberChef
+
+[Read this article on CyberChef](https://kravensecurity.com/cyberchef-guide) to learn what it is and how to use it. Then give one of the recipes below a go!
+
 ### Loading a Recipe
  
  1. Copy the recipe code under the "Code" section of recipe or from the associated `.json` file. The Code section conains the recipe in Chef format.
