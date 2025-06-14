@@ -14,9 +14,12 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 
 ### Loading a Recipe
  
- 1. Copy the recipe code under the "Code" section of recipe or from the associated `.json` file. The Code section conains the recipe in Chef format.
- 2. Select the "Load recipe" button in CyberChef (folder icon).
+ 1. Copy the recipe code under the "Recipe" section of your chosen recipe.
+ 2. Select the "Load recipe" button in CyberChef's recipe pane (folder icon).
  3. Paste in the code and press Load.
+
+
+![Example of Loading a Recipe in CyberChef](./images/example-loading-recipe.png)
 
 
 ## Table of Contents
