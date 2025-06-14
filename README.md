@@ -8,7 +8,7 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 
 ## Tips for Getting Started
 
-### Read Up on CyberChef
+### Read up on CyberChef
 
 [Read this article on CyberChef](https://kravensecurity.com/cyberchef-guide) to learn what it is and how to use it. Then give one of the recipes below a go!
 
