@@ -17,7 +17,9 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 
 ## Table of Contents
 
-### [Malware Analysis]
+### [Malware Analysis](#malware-analysis)
+
+#### 
 
 ### [Web Tokens](#web-tokens) 
 
@@ -52,7 +54,7 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 
 ### Decoding Base64 Encoded PowerShell
 
-[Decoding Base64 Encoded PowerShell](./images/decode-b64-powershell.png)
+[Decoding Base64 Encoded PowerShell](images/decode-b64-powershell.png)
 
 Scripted malware will often use Base64 encoding to evade detection by automated tools. This CyberChef recipe extracts Base64 encoded data in a PowerShell command and decode it. Finally, it adds some formating to make it look better.
 
@@ -67,7 +69,7 @@ Syntax_highlighter('auto detect')
 
 ### Extract Base64 and Inflate PowerShell Code
 
-[Extract Base64 and Inflate PowerShell Code](./images/extract-b64-inflate-beautify.png)
+[Extract Base64 and Inflate PowerShell Code](images/extract-b64-inflate-beautify.png)
 
 PowerShell malware will often use Base64 encoding with compression (e.g. `IO.Compression.DeflateStream`) to evade detection by automated tools. This CyberChef recipe extracts Base64 encoded data in a PowerShell command, decodes it, and decompresses (inflates) the code. Finally, it adds some formating to make it look better.
 
