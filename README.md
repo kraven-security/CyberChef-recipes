@@ -32,6 +32,8 @@ This repository contains a list of CyberChef recipes you may find useful when wo
 
 #### -> [Decoding CharCode](#decoding-charcode)
 
+#### -> [Deobfuscating Malicious Python - Fernet](#deobfuscating-malicious-python---fernet)
+
 ### [Web Tokens](#web-tokens) 
 
 #### -> [Decoding JWT Tokens](#decoding-jwt-tokens)
@@ -96,7 +98,7 @@ Syntax_highlighter('auto detect')
 
 ### Decoding CharCode
 
-[Decodeing CharCode](./images/decoding-charcode.png)
+![Decodeing CharCode](./images/decoding-charcode.png)
 
 
 "Charcode" (short for character code) refers to the numerical representation of a character. While legitimate in programming, it can be used maliciously in techniques like obfuscation, where attackers convert malicious code into its character code equivalents. This makes the code harder for security tools and human analysts to detect and understand, allowing exploits to bypass defenses.
@@ -115,10 +117,10 @@ Jump('start',1)
 
 ### Deobfuscating Malicious Python - Fernet
 
-[Deobfuscating Malicious Python Packages - Fernet](./images/deobfuscating-malicious-python-package-fernet.png)
+![Deobfuscating Malicious Python Packages - Fernet](./images/deobfuscating-malicious-python-package-fernet.png)
 
-| From: 
-| "There are multiple variations of the trojanized Python files throughout the 67 repositories. All use one or more of the following encoding or encryption processes: Base64, Hex text, and Fernet encryption. The latter, Fernet, utilizes the third-party cryptography Python package."
+> From: https://www.reversinglabs.com/blog/threat-actor-banana-squad-exploits-github-repos-in-new-campaign
+> "There are multiple variations of the trojanized Python files throughout the 67 repositories. All use one or more of the following encoding or encryption processes: Base64, Hex text, and Fernet encryption. The latter, Fernet, utilizes the third-party cryptography Python package."
 
 This CyberChef recipe combines each of these in an order that many of the samples used is provided at the end of the blog. This can be used to extract the next stage payload URL from the trojanized Python files.
 
