@@ -113,6 +113,27 @@ Jump('start',1)
 ```
 
 
+### Deobfuscating Malicious Python - Fernet
+
+[Deobfuscating Malicious Python Packages - Fernet](./images/deobfuscating-malicious-python-package-fernet.png)
+
+| From: 
+| "There are multiple variations of the trojanized Python files throughout the 67 repositories. All use one or more of the following encoding or encryption processes: Base64, Hex text, and Fernet encryption. The latter, Fernet, utilizes the third-party cryptography Python package."
+
+This CyberChef recipe combines each of these in an order that many of the samples used is provided at the end of the blog. This can be used to extract the next stage payload URL from the trojanized Python files.
+
+#### Recipe
+
+```
+Regular_expression('User defined',';exec\\(b\'(.+)\'\\)',true,true,false,false,false,false,'List capture groups')
+From_Hex('Auto')
+Register('Fernet\\(b\'(.+?)\'\\)',true,false,false)
+Regular_expression('User defined','decrypt\\(b\'(.+?)\'\\)',true,true,false,false,false,false,'List capture groups')
+Fernet_Decrypt('$R0')
+Regular_expression('User defined','get\\(\'(.+?)\'\\)',true,true,false,false,false,false,'List capture groups')
+```
+
+
 ## Web Tokens
 
 > CyberChef recipes to decode popular encoding formats.
